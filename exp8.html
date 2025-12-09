@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Cards</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .outer-box {
+        border: 3px solid black;
+        padding: 40px 20px;
+        width: 95%;
+        max-width: 1200px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 40px;  
+        flex-wrap: nowrap; 
+    }
+
+    .card {
+        background: white;
+        width: 270px;
+        padding: 25px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
+        background: #007bff;
+        color: white;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    h3 {
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin: 4px 0;
+        color: #444;
+    }
+</style>
+</head>
+<body>
+
+<div class="outer-box">
+    <div class="container">
+
+        <div class="card">
+            <div class="circle">JK</div>
+            <h3>Jeet Kumar</h3>
+            <p>B.Tech - CSE</p>
+            <p>Roll No: 21CS1007</p>
+            <p>1st Year</p>
+        </div>
+
+        <div class="card">
+            <div class="circle">AR</div>
+            <h3>Asha Rani</h3>
+            <p>B.Tech - IT</p>
+            <p>Roll No: 21IT1012</p>
+            <p>1st Year</p>
+        </div>
+
+        <div class="card">
+            <div class="circle">RK</div>
+            <h3>Rohit Kumar</h3>
+            <p>B.Tech - ECE</p>
+            <p>Roll No: 21EC1009</p>
+            <p>1st Year</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

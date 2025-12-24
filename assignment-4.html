@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Website Slider</title>
+
+<style>
+.header{
+    text-align:center;
+    background-color:rgb(162, 25, 25);
+    color:white;
+    padding:10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.slider, .slider2{
+    width:100%;
+    overflow:hidden;
+}
+
+.slider{
+    height:300px;
+}
+
+.slider2{
+    height:300px;
+    margin-top:20px;
+}
+
+.slides, .slides2{
+    display:flex;
+    width:150%;
+    gap:20px;                 
+    animation: slide 8s infinite;
+}
+
+.slides img{
+    width:50%;
+    height:300px;
+}
+
+.slides2 img{
+    width:50%;
+    height:300px;
+}
+@keyframes slide{
+    0%{margin-left:0%;}
+    50%{margin-left:-50%;}
+    100%{margin-left:-100%;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h2>ABES Engineering College, Ghaziabad</h2>
+</div>
+
+<div class="slider">
+    <div class="slides">
+        <img src="https://image-static.collegedunia.com/images/profile/2024-12-07/1733555569_img-1733555572907.png">
+        <img src="https://www.abes.ac.in/assets/HomePage/1.webp">
+        <img src="https://www.abes.ac.in/assets/HomePage/2%20About%20ABES.jpg">
+    </div>
+</div>
+
+<div class="slider2">
+    <div class="slides2">
+        <img src="https://image-static.collegedunia.com/public/reviewPhotos/722952/f8cc4343-06e5-4df4-bacd-45ea646d356a.jpeg">
+        <img src="https://images.shiksha.com/mediadata/images/1498806492phppoMlsd_205x160.jpg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_V1LFKwDugvcKoAWnYRZaa5fPiEQ-27qvJQ&s">
+    </div>
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Cards</title>
+  <style>
+    body { font-family:Arial, sans-serif; margin:0; padding:20px; }
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      flex: 1 1 200px;
+      background: #eee;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    /* Media query: make cards full width on small screens */
+    @media (max-width: 600px) {
+      .cards {
+        flex-direction: column;
+      }
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Flexbox Cards</h1>
+  <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </div>
+</body>
+</html>

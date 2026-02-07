@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .container {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+    .container .box {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Homepage</h1>
+    <p>Welcome to a simple layout</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Build Something Great</h1>
+    <p>Clean and responsive homepage design</p>
+  </section>
+
+  <div class="container">
+    <div class="box">
+      <h2>About Us</h2>
+      <p>We create simple and effective web designs.</p>
+    </div>
+    <div class="box">
+      <h2>Services</h2>
+      <p>Offering web development, design, and consulting.</p>
+    </div>
+    <div class="box">
+      <h2>Contact</h2>
+      <p>Get in touch with us for collaborations.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 My Homepage. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: rgb(240, 235, 228);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #e4cbcb;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Responsive Cards</h1>
+  <div class="cards">
+    <div class="card"><h3>Card 1</h3><p>Text content only.</p></div>
+    <div class="card"><h3>Card 2</h3><p>Flexible design.</p></div>
+    <div class="card"><h3>Card 3</h3><p>Stacks on small screens.</p></div>
+    <div class="card"><h3>Card 4</h3><p>Clean and simple.</p></div>
+  </div>
+</body>
+</html>
